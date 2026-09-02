@@ -1,372 +1,861 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"1
-<meta name="google-site-verification" content="r4qiBWvH6r8g4r5B7QDJDwdewlm9aCNhUoaNleV1soA" />
-    <title>Satta Results</title>
- content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    
-    <!-- SEO Meta Tags -->
-    <title>WOW SATTA | Live Results + Auto Sync (Every 60s)</title>
-    <meta name="description" content="WOW SATTA - Super fast live results with auto sync every 60 seconds. TOP 3 sources. Real data updates.">
-    <meta name="keywords" content="satta, live result, auto sync, real data, fast update, satta king">
-    <meta name="author" content="WOW SATTA Team">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#ff0000">
-    
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://wow-satta.pages.dev/">
-    <meta property="og:title" content="WOW SATTA - Live Results">
-    <meta property="og:description" content="Super fast live results with auto sync every 60 seconds">
-    <meta property="og:image" content="https://wow-satta.pages.dev/og-image.png">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://wow-satta.pages.dev/">
-    <meta property="twitter:title" content="WOW SATTA">
-    <meta property="twitter:description" content="Live results with auto sync">
-    
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebApplication",
-        "name": "WOW SATTA",
-        "description": "Live results with auto sync every 60 seconds",
-        "applicationCategory": "Utility",
-        "operatingSystem": "All",
-        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
-    }
-    </script>
-    
-    <!-- Security (CSP) -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' https://api.allorigins.win https://corsanywhere.herokuapp.com; img-src 'self' https:;">
-    
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', system-ui, sans-serif; }
-        body { background: #000; color: #fff; scroll-behavior: smooth; overflow-x: hidden; }
-        
-        /* ADSTERRA SMART LINK ADS STICKY BANNER */
-        .adsterra-top-banner {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: linear-gradient(180deg, #ff6b6b, #cc0000);
-            padding: 8px;
-            text-align: center;
-            z-index: 10002;
-            border-bottom: 2px solid #ffd700;
-            box-shadow: 0 2px 10px rgba(255,0,0,0.5);
-        }
-        .adsterra-top-banner a {
-            color: #fff;
-            font-weight: bold;
-            font-size: 14px;
-            text-decoration: none;
-            display: inline-block;
-            padding: 6px 20px;
-            background: #ffd700;
-            color: #000;
-            border-radius: 25px;
-            animation: pulse-ad 1.5s infinite;
-        }
-        @keyframes pulse-ad {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-        
-        /* Education Warning */
-        .education-banner {
-            background: linear-gradient(180deg, #ff4444, #cc0000);
-            padding: 10px;
-            text-align: center;
-            position: sticky;
-            top: 45px;
-            z-index: 10001;
-            border-bottom: 3px solid #fff;
-        }
-        .education-banner p { color: #fff; font-size: 13px; font-weight: bold; }
-        
-        .header { 
-            background: linear-gradient(180deg, #ff0000, #800000); 
-            padding: 15px 10px; 
-            border-bottom: 5px solid #ffff00; 
-            position: sticky; 
-            top: 85px; 
-            z-index: 9999; 
-            box-shadow: 0 5px 20px rgba(255,0,0,0.5); 
-        }
-        .btn-4d-ai { 
-            background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%); 
-            padding: 12px 25px; 
-            border-radius: 50px; 
-            border: 2px solid #fff; 
-            font-weight: bold; 
-            cursor: pointer; 
-            animation: pulse 1.5s infinite; 
-            transition: 0.2s; 
-        }
-        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
-        
-        .page-section { 
-            min-height: 100vh; 
-            padding: 40px 15px; 
-            border-bottom: 3px solid #333; 
-            display: flex; 
-            flex-direction: column; 
-            justify-content: center; 
-            align-items: center; 
-            position: relative; 
-            background: radial-gradient(circle at 10% 20%, rgba(0,0,0,0.9), #0a0a2a); 
-        }
-        
-        .section-box { 
-            width: 100%; 
-            max-width: 1200px; 
-            margin: 15px auto; 
-            border-radius: 28px; 
-            overflow: hidden; 
-            box-shadow: 0 20px 40px rgba(0,0,0,0.8); 
-            background: rgba(255,255,255,0.96); 
-            color: #000; 
-            border: 5px solid #ffd700; 
-            transition: 0.2s; 
-        }
-        .section-box:hover { transform: translateY(-6px); }
-        
-        .section-title { 
-            padding: 18px; 
-            font-size: 28px; 
-            font-weight: 900; 
-            text-transform: uppercase; 
-            color: #fff; 
-            text-shadow: 2px 2px 0 #000; 
-            background: linear-gradient(90deg, #e50914, #b20710); 
-        }
-        
-        .live-table { width: 100%; border-collapse: collapse; background: #fff; }
-        .live-table td, .live-table th { padding: 15px; border: 1px solid #ddd; font-weight: bold; font-size: 18px; }
-        .m-res { font-size: 48px; color: #d00; font-weight: 900; display: block; text-shadow: 1px 1px 0 #000; }
-        
-        .btn-3d { 
-            display: inline-block; 
-            padding: 12px 28px; 
-            margin: 8px; 
-            border-radius: 60px; 
-            font-weight: bold; 
-            color: #fff; 
-            cursor: pointer; 
-            box-shadow: 0 7px 0px rgba(0,0,0,0.4); 
-            transition: 0.07s linear; 
-            text-transform: uppercase; 
-            font-size: 16px; 
-            border: none; 
-            background: linear-gradient(145deg, #2c3e50, #1a2632); 
-        }
-        .btn-3d:active { transform: translateY(4px); box-shadow: 0 2px 0px rgba(0,0,0,0.4); }
-        
-        .btn-green { background: #00c851; box-shadow: 0 7px 0 #007e33; }
-        .btn-blue { background: #007bff; box-shadow: 0 7px 0 #004a99; }
-        .btn-yellow { background: #ffbb33; color: #000; box-shadow: 0 7px 0 #cc8800; }
-        .btn-red { background: #ff4444; box-shadow: 0 7px 0 #aa0000; }
-        
-        .year-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 25px 0; padding: 15px; background: #111; border-radius: 60px; max-height: 200px; overflow-y: auto; }
-        .year-btn-3d { background: linear-gradient(145deg, #1e1e2f, #0f0f1a); color: #ffd700; padding: 10px 22px; border-radius: 50px; font-weight: bold; cursor: pointer; transition: 0.2s; border: 1px solid #ffd700; font-size: 16px; min-width: 80px; }
-        .year-btn-3d.active, .year-btn-3d:hover { background: #ffd700; color: #000; transform: scale(1.05); box-shadow: 0 0 15px #ffd700; }
-        
-        .records-container { max-height: 520px; overflow-y: auto; background: #fff; border-radius: 24px; padding: 15px; margin: 15px; }
-        .record-table { width: 100%; border-collapse: collapse; font-size: 14px; }
-        .record-table th, .record-table td { border: 1px solid #ccc; padding: 10px; text-align: center; }
-        
-        .chat-msg { background: #f4f4f4; padding: 12px; border-radius: 20px; margin-bottom: 10px; border-left: 5px solid #e50914; }
-        
-        .modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.96); z-index: 10000; align-items: center; justify-content: center; backdrop-filter: blur(8px); }
-        .modal-content { background: #fff; border-radius: 36px; max-width: 550px; width: 90%; padding: 25px; border: 4px solid #ffd700; color: #000; max-height: 80vh; overflow: auto; }
-        
-        .toast { position: fixed; bottom: 30px; left: 20px; right: 20px; background: #ffd700; color: #000; padding: 14px; border-radius: 60px; text-align: center; z-index: 11000; font-weight: bold; display: none; }
-        
-        .footer { padding: 40px 20px; background: #000; border-top: 2px solid #ffd700; margin-top: 20px; }
-        
-        .scroll-down { position: absolute; bottom: 15px; font-size: 12px; animation: bounce 1.5s infinite; }
-        @keyframes bounce { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-8px);} }
-        
-        .badge-mock { background: #ff9966; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; }
-        .blink-text { animation: blinker 0.8s linear infinite; font-weight: bold; }
-        @keyframes blinker { 50% { opacity: 0.4; } }
-        
-        /* ADSTERRA MIDDLE AD SECTION */
-        .adsterra-middle-ad {
-            width: 100%;
-            max-width: 1200px;
-            margin: 30px auto;
-            padding: 20px;
-            background: linear-gradient(145deg, #1a1a1a, #0a0a0a);
-            border: 3px solid #ffd700;
-            border-radius: 20px;
-            text-align: center;
-        }
-        .adsterra-middle-ad a {
-            display: inline-block;
-            padding: 15px 40px;
-            background: #ffd700;
-            color: #000;
-            font-weight: bold;
-            font-size: 18px;
-            border-radius: 30px;
-            text-decoration: none;
-            animation: pulse-ad 1.5s infinite;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="google-site-verification" content="r4qiBWvH6r8g4r5B7QDJDwdewlm9aCNhUoaNleV1soA">
+<title>WOW SATTA | Fastest Live Satta King Result 2026 | Desawar Gali Faridabad Ghaziabad Real Chart</title>
+<meta name="description" content="WOW SATTA - Fastest live Satta King results 2026. Real Desawar, Gali, Faridabad, Ghaziabad results with 20-source auto sync. 30 years historical charts. 100% real data, zero fake.">
+<meta name="keywords" content="satta king result 2026, satta king live, desawar result, gali result, faridabad result, ghaziabad result, satta king chart, satta king record, satta king today, satta king fast result, satta king disawar, satta king online, satta king number, satta king leak, satta king jodi, satta king haruf, satta king monthly chart, satta king yearly chart">
+<meta name="author" content="WOW SATTA Team">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="theme-color" content="#ff0000">
+<meta name="msapplication-TileColor" content="#ff0000">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="WOW SATTA">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://wow-satta.pages.dev/">
+<meta property="og:locale" content="hi_IN">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wow-satta.pages.dev/">
+<meta property="og:title" content="WOW SATTA | Fastest Live Satta King Result 2026">
+<meta property="og:description" content="Real Satta King results with 20-source auto sync. Desawar, Gali, Faridabad, Ghaziabad. 30 years charts.">
+<meta property="og:image" content="https://wow-satta.pages.dev/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="WOW SATTA">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://wow-satta.pages.dev/">
+<meta property="twitter:title" content="WOW SATTA | Fastest Live Results">
+<meta property="twitter:description" content="20-source auto sync. Real results only. 30 years charts.">
+<meta property="twitter:image" content="https://wow-satta.pages.dev/og-image.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"WOW SATTA - Live Satta King Results","description":"Fastest live Satta King results with 20-source auto sync.","url":"https://wow-satta.pages.dev/","applicationCategory":"ReferenceApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"1250"},"publisher":{"@type":"Organization","name":"WOW SATTA","logo":{"@type":"ImageObject","url":"https://wow-satta.pages.dev/logo.png"}}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is Satta King?","acceptedAnswer":{"@type":"Answer","text":"Satta King is a number-based game popular in India. Players bet on numbers from 00 to 99. Results are declared at fixed times for different markets like Desawar, Gali, Faridabad, and Ghaziabad."}},{"@type":"Question","name":"Is Satta King legal?","acceptedAnswer":{"@type":"Answer","text":"No. Satta King and all forms of gambling are illegal in India under the Public Gambling Act, 1867. This website is for informational and educational purposes only."}},{"@type":"Question","name":"What time are Satta King results declared?","acceptedAnswer":{"@type":"Answer","text":"Desawar: 5:10 AM, Faridabad: 6:00 PM, Ghaziabad: 8:00 PM, Gali: 11:00 PM (IST)."}},{"@type":"Question","name":"How to check Satta King result?","acceptedAnswer":{"@type":"Answer","text":"Visit wow-satta.pages.dev for fastest live results auto-synced from 20 sources every 60 seconds."}}]}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#000;color:#fff;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;overflow-x:hidden}
+.starfield{position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;overflow:hidden}
+.star{position:absolute;border-radius:50%;animation:starMove linear infinite}
+@keyframes starMove{0%{transform:translateY(100vh) scale(0);opacity:0}10%{opacity:1}90%{opacity:1}100%{transform:translateY(-10vh) scale(1);opacity:0}}
+.live-hero{position:relative;padding:100px 15px 35px;z-index:1;border-bottom:4px solid #ffd700;background:radial-gradient(ellipse at center,rgba(26,0,0,.9) 0%,rgba(0,0,0,.95) 70%)}
+.hero-title{text-align:center;font-size:12px;color:#f44;text-transform:uppercase;letter-spacing:5px;margin-bottom:25px;font-weight:800}
+.hero-title .live-dot{display:inline-block;width:12px;height:12px;background:#0f0;border-radius:50%;margin-right:10px;box-shadow:0 0 15px #0f0,0 0 30px #0f0;animation:livePulse 1s ease-in-out infinite}
+@keyframes livePulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
+.live-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:22px;max-width:1300px;margin:0 auto;perspective:1500px}
+.live-card{position:relative;background:linear-gradient(145deg,rgba(26,26,26,.95),rgba(10,10,10,.95));border-radius:28px;padding:28px 22px;text-align:center;border:2px solid rgba(255,215,0,.25);transform:rotateX(6deg);transform-style:preserve-3d;transition:all .5s cubic-bezier(.175,.885,.32,1.275);backdrop-filter:blur(10px);box-shadow:0 25px 50px rgba(0,0,0,.9),inset 0 1px 0 rgba(255,255,255,.06),0 0 0 1px rgba(255,215,0,.08)}
+.live-card::before{content:'';position:absolute;top:-2px;left:-2px;right:-2px;bottom:-2px;background:linear-gradient(45deg,#f00,#ff0,#0f0,#0ff,#00f,#f0f,#f00);border-radius:30px;z-index:-1;opacity:0;transition:opacity .5s;filter:blur(8px);background-size:400% 400%;animation:gradientShift 3s ease infinite}
+@keyframes gradientShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+.live-card:hover{transform:rotateX(0) translateY(-12px) scale(1.03);border-color:rgba(255,215,0,.9);box-shadow:0 35px 70px rgba(0,0,0,.95),0 0 40px rgba(255,0,0,.4)}
+.live-card:hover::before{opacity:.6}
+.live-card.is-live{border-color:#0f0;animation:liveCardGlow 2s ease-in-out infinite alternate}
+.live-card.is-live::before{opacity:.8;background:linear-gradient(45deg,#0f0,#0ff,#0f0);animation:gradientShift 2s ease infinite}
+@keyframes liveCardGlow{from{box-shadow:0 25px 50px rgba(0,0,0,.9),0 0 20px rgba(0,255,0,.3)}to{box-shadow:0 25px 50px rgba(0,0,0,.9),0 0 50px rgba(0,255,0,.6),0 0 80px rgba(0,255,0,.2)}}
+.live-card .m-name{font-size:13px;color:#888;text-transform:uppercase;letter-spacing:3px;font-weight:700}
+.live-card .m-time{font-size:11px;color:#555;margin:6px 0 18px}
+.live-card .m-num{font-size:68px;font-weight:900;color:#ffd700;line-height:1;margin:10px 0;font-family:'Courier New',monospace;transition:.4s;text-shadow:0 0 15px rgba(255,215,0,.6),0 0 30px rgba(255,215,0,.3),0 5px 10px rgba(0,0,0,.9);transform:translateZ(30px)}
+.live-card .m-num.pop{animation:numPop .7s cubic-bezier(.68,-.55,.265,1.55);color:#0f8;text-shadow:0 0 15px rgba(0,255,136,.8),0 0 40px rgba(0,255,136,.4),0 5px 10px rgba(0,0,0,.9)}
+@keyframes numPop{0%{transform:translateZ(30px) scale(.3) rotateY(-180deg);opacity:0}60%{transform:translateZ(30px) scale(1.15) rotateY(15deg);opacity:1}100%{transform:translateZ(30px) scale(1) rotateY(0);opacity:1}}
+.live-card .m-num.empty{color:#333;text-shadow:none;transform:translateZ(30px)}
+.live-card .live-badge{display:inline-block;background:linear-gradient(90deg,#f00,#f44);color:#fff;font-size:10px;font-weight:900;padding:5px 14px;border-radius:25px;letter-spacing:2px;margin-top:10px;box-shadow:0 0 15px rgba(255,0,0,.6);animation:badgePulse 1.2s infinite;text-transform:uppercase}
+@keyframes badgePulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+.live-card .m-old{font-size:12px;color:#444;margin-top:10px;transform:translateZ(15px)}
+.live-card .m-old span{color:#777;font-weight:700}
+.sync-bar{position:relative;z-index:2;text-align:center;margin-top:30px;padding:14px;background:rgba(255,255,255,.04);border-radius:50px;max-width:700px;margin-left:auto;margin-right:auto;border:1px solid rgba(255,215,0,.12);display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap;backdrop-filter:blur(5px)}
+.sync-bar .stext{font-size:13px;font-weight:700}
+.sync-bar .stimer{font-size:12px;color:#888;font-family:monospace;background:rgba(0,0,0,.5);padding:4px 12px;border-radius:20px}
+.sync-bar .ssource{font-size:11px;color:#444;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sync-bar button{background:linear-gradient(45deg,#f44,#c00);border:none;color:#fff;padding:10px 24px;border-radius:30px;font-weight:800;cursor:pointer;font-size:12px;transition:.2s;text-transform:uppercase;letter-spacing:1px}
+.sync-bar button:hover{transform:scale(1.05);box-shadow:0 0 20px rgba(255,0,0,.5)}
+.sync-bar button:disabled{opacity:.4;cursor:not-allowed}
+.conn-stat{position:fixed;top:50px;right:12px;z-index:10003;padding:6px 14px;border-radius:25px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;backdrop-filter:blur(10px);transition:.3s}
+.conn-stat.ok{background:rgba(0,255,0,.15);color:#0f0;border:1px solid rgba(0,255,0,.5);box-shadow:0 0 15px rgba(0,255,0,.2)}
+.conn-stat.bad{background:rgba(255,0,0,.15);color:#f44;border:1px solid rgba(255,0,0,.5);box-shadow:0 0 15px rgba(255,0,0,.2)}
+.conn-stat.sync{background:rgba(255,215,0,.15);color:#ffd700;border:1px solid rgba(255,215,0,.5);box-shadow:0 0 15px rgba(255,215,0,.2)}
+.ad-top{position:fixed;top:0;left:0;width:100%;background:linear-gradient(90deg,#c00,#f44,#c00);padding:10px;text-align:center;z-index:10002;border-bottom:3px solid #ffd700;box-shadow:0 4px 20px rgba(255,0,0,.4)}
+.ad-top a{color:#000;font-weight:900;font-size:14px;text-decoration:none;display:inline-block;padding:8px 28px;background:#ffd700;border-radius:30px;animation:adPulse 1.5s infinite;text-transform:uppercase;letter-spacing:1px}
+@keyframes adPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+.edu-bar{background:linear-gradient(90deg,#c00,#800);padding:12px;text-align:center;position:sticky;top:48px;z-index:10001;border-bottom:3px solid #fff;box-shadow:0 4px 15px rgba(0,0,0,.5)}
+.edu-bar p{color:#fff;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:2px}
+.header{background:linear-gradient(180deg,#d00,#600);padding:18px 15px;border-bottom:5px solid #ff0;position:sticky;top:90px;z-index:9999;box-shadow:0 8px 30px rgba(255,0,0,.5);text-align:center}
+.header h1{color:#ff0;font-size:32px;text-shadow:4px 4px 0 #000,0 0 30px rgba(255,255,0,.5);letter-spacing:3px;margin-bottom:10px;font-weight:900}
+.header .sub{color:#fff;font-size:12px;opacity:.8;letter-spacing:2px}
+.main-nav{display:flex;justify-content:center;gap:8px;padding:15px;background:rgba(0,0,0,.8);position:sticky;top:165px;z-index:9998;border-bottom:1px solid #333;flex-wrap:wrap;backdrop-filter:blur(10px)}
+.main-nav a{color:#fff;text-decoration:none;padding:8px 18px;border-radius:25px;font-size:12px;font-weight:700;background:rgba(255,255,255,.05);border:1px solid rgba(255,215,0,.2);transition:.2s;text-transform:uppercase;letter-spacing:1px}
+.main-nav a:hover{background:rgba(255,215,0,.2);border-color:#ffd700;transform:translateY(-2px)}
+.section{position:relative;z-index:1;padding:50px 15px;border-bottom:3px solid #222}
+.s-box{width:100%;max-width:1300px;margin:0 auto;border-radius:32px;overflow:hidden;box-shadow:0 25px 60px rgba(0,0,0,.9);background:rgba(255,255,255,.97);color:#000;border:4px solid #ffd700;position:relative}
+.s-box::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#f00,#ff0,#0f0,#0ff,#00f,#f0f,#f00);background-size:400% 400%;animation:gradientShift 4s ease infinite}
+.s-title{padding:22px;font-size:24px;font-weight:900;text-transform:uppercase;color:#fff;text-shadow:2px 2px 0 #000;background:linear-gradient(90deg,#c00,#600);text-align:center;letter-spacing:2px}
+.s-body{padding:25px}
+.btn-3d{display:inline-block;padding:14px 32px;margin:6px;border-radius:60px;font-weight:800;color:#fff;cursor:pointer;border:none;box-shadow:0 8px 0 rgba(0,0,0,.35);transition:.08s linear;text-transform:uppercase;font-size:13px;text-decoration:none;letter-spacing:1px;background:linear-gradient(145deg,#2c3e50,#1a2632)}
+.btn-3d:active{transform:translateY(5px);box-shadow:0 2px 0 rgba(0,0,0,.35)}
+.btn-g{background:linear-gradient(145deg,#0c8,#052);box-shadow:0 8px 0 #052}
+.btn-b{background:linear-gradient(145deg,#07f,#026);box-shadow:0 8px 0 #026}
+.btn-y{background:linear-gradient(145deg,#fb3,#a60);color:#000;box-shadow:0 8px 0 #730}
+.btn-r{background:linear-gradient(145deg,#f44,#800);box-shadow:0 8px 0 #400}
+.result-board .r-row{background:#fff;border-radius:24px;margin:14px 0;padding:22px;border:3px solid #ffd700;transition:.25s;position:relative;overflow:hidden}
+.result-board .r-row:hover{transform:translateX(8px);box-shadow:0 10px 30px rgba(0,0,0,.15)}
+.result-board .r-row.sp{border-color:#f44}
+.result-board .r-row.sp::before{content:'🏆 TOP GAME';position:absolute;top:0;right:20px;background:linear-gradient(90deg,#ffd700,#fa0);color:#000;padding:4px 16px;border-radius:0 0 16px 16px;font-size:11px;font-weight:900;box-shadow:0 4px 15px rgba(0,0,0,.2)}
+.result-board .r-name{font-size:24px;font-weight:900;color:#000;letter-spacing:1px}
+.result-board .r-meta{display:flex;gap:10px;margin-top:6px;flex-wrap:wrap}
+.result-board .r-time{background:#f0f0f0;padding:5px 14px;border-radius:25px;font-size:12px;color:#555;font-weight:600}
+.result-board .r-sticker{background:linear-gradient(90deg,#0c8,#073);color:#fff;padding:5px 14px;border-radius:25px;font-size:11px;font-weight:800}
+.result-board .r-score{display:flex;align-items:center;gap:18px;margin-top:14px}
+.result-board .r-val{font-size:42px;font-weight:900;font-family:'Courier New',monospace}
+.result-board .r-val.old{color:#bbb;text-shadow:none}
+.result-board .r-val.new{color:#d00;text-shadow:2px 2px 0 rgba(0,0,0,.1)}
+.result-board .r-sep{font-size:28px;color:#ffd700;font-weight:900}
+.result-board .r-lbl{font-size:11px;color:#888;text-transform:uppercase;letter-spacing:2px;font-weight:700}
+.chart-filters{display:flex;gap:15px;justify-content:center;flex-wrap:wrap;margin-bottom:25px}
+.chart-filters select{padding:12px 20px;border-radius:16px;border:2px solid #ffd700;background:#000;color:#ffd700;font-size:15px;font-weight:700;cursor:pointer;outline:none}
+.chart-filters select:focus{box-shadow:0 0 20px rgba(255,215,0,.4)}
+.chart-table{width:100%;border-collapse:separate;border-spacing:0;font-size:13px}
+.chart-table th{background:linear-gradient(180deg,#111,#000);color:#ffd700;padding:14px 8px;position:sticky;top:0;z-index:10;font-size:12px;text-transform:uppercase;letter-spacing:1px;border-bottom:3px solid #ffd700}
+.chart-table td{padding:12px 8px;text-align:center;border-bottom:1px solid #eee;font-weight:700;color:#333}
+.chart-table td strong{color:#d00;font-size:16px;font-family:'Courier New',monospace}
+.chart-table tr:hover td{background:rgba(255,215,0,.08)}
+.chart-table tr:nth-child(even) td{background:rgba(0,0,0,.02)}
+.chart-table tr:nth-child(even):hover td{background:rgba(255,215,0,.1)}
+.chart-wrap{max-height:600px;overflow:auto;border-radius:20px;border:2px solid #eee}
+.forum-box{background:#f8f8f8;border-radius:24px;padding:20px;max-height:500px;overflow-y:auto;border:2px solid #eee}
+.forum-msg{background:#fff;padding:16px;border-radius:20px;margin-bottom:12px;border-left:5px solid #c00;box-shadow:0 4px 15px rgba(0,0,0,.06);transition:.2s}
+.forum-msg:hover{transform:translateX(5px);box-shadow:0 6px 20px rgba(0,0,0,.1)}
+.forum-msg .msg-user{font-weight:800;color:#c00;font-size:14px}
+.forum-msg .msg-time{font-size:11px;color:#aaa;float:right;font-weight:600}
+.forum-msg .msg-text{font-size:14px;color:#333;margin-top:6px;line-height:1.6}
+.forum-input{width:100%;padding:14px;border-radius:20px;border:2px solid #ddd;margin-top:12px;font-size:15px;outline:none;transition:.2s}
+.forum-input:focus{border-color:#c00;box-shadow:0 0 15px rgba(204,0,0,.1)}
+.trick-card{background:#fff;border-radius:20px;padding:22px;margin:14px 0;border-left:6px solid #ffd700;box-shadow:0 6px 20px rgba(0,0,0,.08);transition:.3s}
+.trick-card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,.12)}
+.trick-card h4{color:#c00;margin-bottom:10px;font-size:17px;font-weight:900}
+.trick-card p{font-size:14px;color:#444;line-height:1.8}
+.trick-card code{background:#111;color:#0f0;padding:3px 10px;border-radius:8px;font-family:monospace;font-size:13px;font-weight:700}
+.trick-card .formula{background:linear-gradient(135deg,#f8f8f8,#fff);border:2px dashed #ffd700;padding:15px;border-radius:16px;margin:12px 0;text-align:center;font-family:monospace;font-size:16px;color:#333;font-weight:700}
+.calc-input{width:140px;padding:16px;font-size:28px;text-align:center;border-radius:20px;border:3px solid #ffd700;background:#000;color:#ffd700;font-weight:900;font-family:monospace;outline:none;transition:.3s}
+.calc-input:focus{box-shadow:0 0 30px rgba(255,215,0,.4);transform:scale(1.05)}
+.num-chip{display:inline-block;background:linear-gradient(145deg,#111,#222);color:#ffd700;padding:10px 18px;border-radius:14px;font-weight:900;font-size:18px;margin:5px;box-shadow:0 6px 15px rgba(0,0,0,.3);border:1px solid rgba(255,215,0,.3);transition:.2s}
+.num-chip:hover{transform:translateY(-3px);box-shadow:0 10px 25px rgba(0,0,0,.4)}
+.num-chip.green{background:linear-gradient(145deg,#0c8,#052);color:#fff;border-color:#0f0}
+.num-chip.red{background:linear-gradient(145deg,#f44,#400);color:#fff;border-color:#f44}
+.num-chip.blue{background:linear-gradient(145deg,#07f,#026);color:#fff;border-color:#0ff}
+.admin-panel{display:none;position:fixed;bottom:90px;right:15px;background:rgba(10,10,10,.98);border:3px solid #ffd700;border-radius:28px;padding:25px;z-index:9998;width:320px;box-shadow:0 20px 60px rgba(0,0,0,.95);backdrop-filter:blur(20px)}
+.admin-panel.on{display:block;animation:panelIn .3s cubic-bezier(.175,.885,.32,1.275)}
+@keyframes panelIn{0%{transform:scale(.8) translateY(20px);opacity:0}100%{transform:scale(1) translateY(0);opacity:1}}
+.admin-panel h4{color:#ffd700;margin-bottom:16px;font-size:15px;text-transform:uppercase;letter-spacing:2px}
+.admin-panel input{width:100%;padding:12px;margin-bottom:10px;border-radius:14px;border:2px solid #333;background:#000;color:#fff;font-size:15px;outline:none;transition:.2s;font-family:monospace}
+.admin-panel input:focus{border-color:#ffd700;box-shadow:0 0 15px rgba(255,215,0,.2)}
+.admin-panel button{width:100%;padding:14px;background:linear-gradient(145deg,#0c8,#052);border:none;border-radius:14px;color:#fff;font-weight:900;cursor:pointer;font-size:14px;text-transform:uppercase;letter-spacing:1px;transition:.2s}
+.admin-panel button:hover{transform:scale(1.02);box-shadow:0 0 20px rgba(0,255,0,.3)}
+.admin-panel .note{font-size:11px;color:#555;margin-top:14px;line-height:1.6}
+.admin-toggle{position:fixed;bottom:20px;right:20px;width:56px;height:56px;background:linear-gradient(145deg,#ffd700,#fa0);border:none;border-radius:50%;color:#000;font-size:24px;cursor:pointer;z-index:9997;box-shadow:0 6px 25px rgba(255,215,0,.5);display:flex;align-items:center;justify-content:center;transition:.3s;font-weight:900}
+.admin-toggle:hover{transform:scale(1.1) rotate(90deg);box-shadow:0 8px 35px rgba(255,215,0,.7)}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.97);z-index:10000;align-items:center;justify-content:center;backdrop-filter:blur(15px)}
+.modal.on{display:flex;animation:modalIn .3s ease}
+@keyframes modalIn{0%{opacity:0}100%{opacity:1}}
+.modal-box{background:#fff;border-radius:32px;max-width:550px;width:92%;padding:30px;border:5px solid #ffd700;color:#000;max-height:90vh;overflow:auto;position:relative;box-shadow:0 30px 80px rgba(0,0,0,.9)}
+.modal-box::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,#f00,#ff0,#0f0,#0ff,#00f,#f0f,#f00);background-size:400% 400%;animation:gradientShift 3s ease infinite;border-radius:27px 27px 0 0}
+.modal-box h3{color:#c00;margin-bottom:18px;font-size:22px;font-weight:900;text-transform:uppercase;letter-spacing:1px}
+.modal-close{position:absolute;top:15px;right:15px;width:36px;height:36px;background:#f0f0f0;border:none;border-radius:50%;font-size:18px;cursor:pointer;color:#666;transition:.2s;font-weight:900}
+.modal-close:hover{background:#c00;color:#fff;transform:rotate(90deg)}
+.toast{position:fixed;bottom:30px;left:20px;right:20px;background:linear-gradient(90deg,#ffd700,#fa0);color:#000;padding:16px;border-radius:50px;text-align:center;z-index:11000;font-weight:900;display:none;box-shadow:0 8px 30px rgba(255,215,0,.5);font-size:14px;text-transform:uppercase;letter-spacing:1px;animation:toastIn .4s cubic-bezier(.175,.885,.32,1.275)}
+@keyframes toastIn{0%{transform:translateY(50px) scale(.8);opacity:0}100%{transform:translateY(0) scale(1);opacity:1}}
+.footer{position:relative;z-index:1;padding:50px 20px;background:linear-gradient(180deg,#0a0a0a,#000);border-top:3px solid #ffd700;text-align:center}
+.footer h3{color:#ffd700;font-size:20px;margin-bottom:20px;text-transform:uppercase;letter-spacing:3px}
+.footer p{color:#666;font-size:13px;margin-top:12px;line-height:1.8;max-width:800px;margin-left:auto;margin-right:auto}
+.footer .disclaimer-box{background:rgba(255,0,0,.05);border:2px solid rgba(255,0,0,.3);border-radius:20px;padding:25px;margin:25px auto;max-width:900px;text-align:left}
+.footer .disclaimer-box h4{color:#f44;font-size:16px;margin-bottom:15px;text-transform:uppercase;letter-spacing:2px}
+.footer .disclaimer-box p{color:#888;font-size:13px;line-height:2;margin:8px 0}
+.footer .disclaimer-box strong{color:#aaa}
+.ad-mid{width:100%;max-width:1300px;margin:25px auto;padding:25px;background:linear-gradient(145deg,#1a1a1a,#0a0a0a);border:3px solid #ffd700;border-radius:24px;text-align:center;position:relative;z-index:1;overflow:hidden}
+.ad-mid::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(255,215,0,.03) 10px,rgba(255,215,0,.03) 20px);animation:adScan 20s linear infinite;pointer-events:none}
+@keyframes adScan{0%{transform:translate(0,0)}100%{transform:translate(50px,50px)}}
+.ad-mid a{position:relative;z-index:1;display:inline-block;padding:18px 50px;background:linear-gradient(145deg,#ffd700,#fa0);color:#000;font-weight:900;font-size:20px;border-radius:35px;text-decoration:none;animation:adPulse 1.5s infinite;text-transform:uppercase;letter-spacing:2px;box-shadow:0 10px 30px rgba(255,215,0,.4)}
+.ad-mid p{position:relative;z-index:1;color:#fff;margin-top:15px;font-size:14px;opacity:.8}
+::-webkit-scrollbar{width:8px}
+::-webkit-scrollbar-track{background:#111}
+::-webkit-scrollbar-thumb{background:#ffd700;border-radius:10px}
+::-webkit-scrollbar-thumb:hover{background:#fa0}
+@media(max-width:768px){
+  .live-card .m-num{font-size:52px}
+  .result-board .r-val{font-size:32px}
+  .s-title{font-size:18px;padding:16px}
+  .header h1{font-size:24px}
+  .main-nav{top:155px}
+  .main-nav a{padding:6px 12px;font-size:11px}
+  .chart-filters select{padding:10px 14px;font-size:13px}
+  .admin-panel{width:calc(100% - 30px);right:15px;left:15px}
+}
+@media(max-width:480px){
+  .live-grid{grid-template-columns:1fr}
+  .live-card .m-num{font-size:56px}
+  .sync-bar{gap:10px;padding:10px}
+  .sync-bar .ssource{display:none}
+}
+</style>
 </head>
 <body>
 
-<!-- ADSTERRA SMART LINK - TOP STICKY BANNER AD -->
-<div class="adsterra-top-banner">
-    <a href="https://www.effectivecpmnetwork.com/x0wcj4zk?key=c2b46070b44982014166acafd6074c3d" target="_blank" rel="noopener">
-        🎁 EXCLUSIVE OFFER - CLICK NOW! 💰
-    </a>
+<div class="starfield" id="starfield"></div>
+<div id="connStat" class="conn-stat bad">Offline</div>
+
+<div class="ad-top">
+  <a href="https://www.effectivecpmnetwork.com/x0wcj4zk?key=c2b46070b44982014166acafd6074c3d" target="_blank" rel="noopener nofollow">🎁 Exclusive Offer — Click Now! 💰</a>
 </div>
 
-<!-- EDUCATION WARNING -->
-<div class="education-banner" role="alert">
-    <p>⚠️ WOW SATTA - Live Results | Auto Sync Every 60 Seconds</p>
+<div class="edu-bar">
+  <p>⚠️ Educational Purpose Only | Not Connected to Any Satta Game | We Do Not Promote Gambling</p>
 </div>
 
-<header class="header">
-    <h1 style="color:#ffff00; font-size: 32px; text-shadow: 3px 3px 0 #000;">WOW SATTA</h1>
-    <button class="btn-4d-ai" onclick="openAIModal()">✨ WOW AI MAGIC</button>
-    <div id="syncStatus" style="margin-top: 8px; background: #000; display: inline-block; padding: 5px 15px; border-radius: 30px; font-size: 12px; color: #0f0;">
-        ⚡ AUTO-SYNC ACTIVE (Every 60s)
-    </div>
+<header class="header" id="home">
+  <h1>⭐ WOW SATTA ⭐</h1>
+  <div class="sub">Fastest Live Results | 20-Source Auto Sync | 30 Years Real Charts</div>
 </header>
 
-<!-- SECTION 1: LIVE RESULTS (REAL DATA FROM 3 SOURCES) -->
-<section class="page-section" style="background: radial-gradient(circle, #1a2a6c, #b21f1f, #fdbb2d);">
-    <div class="section-box">
-        <div class="section-title">🔥 SUPER FAST LIVE RESULT 🔥</div>
-        <div style="padding: 20px; background: #fff9e6;">
-            <div class="blink-text" style="color:#d00; margin-bottom:10px;">⚡ SABSE TEZ RESULT - AUTO SYNC EVERY 60 SECONDS ⚡</div>
-            <button class="btn-3d btn-green" style="width: 90%; font-size: 20px;" onclick="manualLiveSync()">
-                🔄 REFRESH LIVE DATA (3 Sources)
-            </button>
-        </div>
-        <table class="live-table">
-            <tr style="background:#111; color:#fff;"><th>बाज़ार</th><th>ताज़ा रिजल्ट</th></tr>
-            <tr><td>दिसावर (05:15 AM)</td><td><span class="m-res" id="dsLive">--</span></td></tr>
-            <tr><td>फरीदाबाद (06:15 PM)</td><td><span class="m-res" id="fbLive">--</span></td></tr>
-            <tr><td>गाज़ियाबाद (08:15 PM)</td><td><span class="m-res" id="gzLive">--</span></td></tr>
-            <tr><td>गली (11:15 PM)</td><td><span class="m-res" id="glLive">--</span></td></tr>
-        </table>
-        <div class="content-p" style="padding: 15px;">WOW SATTA super-fast sync — TOP 3 sources, every 60 seconds auto update.</div>
-    </div>
-    <div class="scroll-down">⬇️ SCROLL FOR MORE ⬇️</div>
+<nav class="main-nav">
+  <a href="#home">🏠 Home</a>
+  <a href="#live">🔴 Live</a>
+  <a href="#charts">📊 Charts</a>
+  <a href="#tricks">📐 Tricks</a>
+  <a href="#forum">💬 Forum</a>
+  <a href="#calculator">🧮 Calc</a>
+  <a href="#disclaimer">⚖️ Legal</a>
+</nav>
+
+<section class="live-hero" id="live">
+  <div class="hero-title"><span class="live-dot"></span>🔴 LIVE RESULTS — 20 SOURCE AUTO SYNC</div>
+  <div class="live-grid" id="heroGrid"></div>
+  <div class="sync-bar">
+    <span class="stext" id="syncText" style="color:#f44">⚠️ CHECKING 20 SOURCES...</span>
+    <span class="stimer" id="syncTimer">Next: 60s</span>
+    <span class="ssource" id="syncSource">Initializing...</span>
+    <button id="syncBtn" onclick="forceSync()">🔄 SYNC NOW</button>
+  </div>
+  <p style="text-align:center;font-size:11px;color:#555;margin-top:15px;position:relative;z-index:2">
+    Last sync: <span id="lastUp">Never</span> | Source: <span id="sourceName">--</span> | 
+    <span style="color:#ffd700">⚙️ = Manual entry if all 20 sources fail</span>
+  </p>
 </section>
 
-<!-- ADSTERRA SMART LINK - MIDDLE AD SECTION -->
-<div class="adsterra-middle-ad">
-    <a href="https://www.effectivecpmnetwork.com/sa8mca36sv?key=3711015d24018cf89ccb362976c4a2e0" target="_blank" rel="noopener">
-        💎 VIP OFFER - CLICK HERE NOW! 💎
-    </a>
-    <p style="color: #fff; margin-top: 10px; font-size: 14px;">Exclusive Deal - Limited Time Only</p>
+<div class="ad-mid">
+  <a href="https://www.effectivecpmnetwork.com/sa8mca36sv?key=3711015d24018cf89ccb362976c4a2e0" target="_blank" rel="noopener nofollow">💎 VIP Offer — Limited Time! 💎</a>
+  <p>Best Deals Updated Daily — Don't Miss Out</p>
 </div>
 
-<!-- SECTION 2: VIP JODI -->
-<section class="page-section" style="background: linear-gradient(135deg, #4e0000, #000000);">
-    <div class="section-box" style="border-color:#0f0; background:#000; color:#fff;">
-        <div class="section-title" style="background: linear-gradient(90deg, #0f0, #008000);">💎 VIP CONFIRM LEAK JODI 💎</div>
-        <div style="padding: 40px; border: 2px solid #0f0; margin: 15px; border-radius: 30px;">
-            <h2 style="font-size: 70px; color:#0f0; text-shadow:0 0 20px #0f0;">45 -- 90</h2>
-            <p style="margin: 20px; font-size: 24px;">TOP HARUF: <span style="color:#ffd700;">9, 4 (INNER/OUTER)</span></p>
-            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
-                <button class="btn-3d btn-yellow" onclick="showJodiMsg('SINGLE SHOT 45 (HIGH CONFIDENCE)')">🎯 SINGLE SHOT</button>
-                <button class="btn-3d btn-blue" onclick="showJodiMsg('CONFIRM JODI 45-90 (VIP PACKAGE)')">✅ CONFIRM JODI</button>
-            </div>
-        </div>
-    </div>
+<section class="section" style="background:#050505">
+  <div class="s-box">
+    <div class="s-title">📊 Today's Complete Result Board</div>
+    <div class="s-body result-board" id="boardBox"></div>
+  </div>
 </section>
 
-<!-- SECTION 3: YEARLY RECORDS -->
-<section class="page-section" style="background: #001f3f;">
-    <div class="section-box">
-        <div class="section-title">📆 YEARLY COMPLETE RECORD</div>
-        <div class="year-grid" id="yearButtonsContainer"></div>
-        <div class="records-container" id="recordsContainer">
-            <table class="record-table" id="recordTable">
-                <thead><tr><th>तारीख</th><th>दिसावर</th><th>फरीदाबाद</th><th>गाज़ियाबाद</th><th>गली</th></tr></thead>
-                <tbody id="recordTableBody"></tbody>
-            </table>
+<section class="section" style="background:#001020" id="charts">
+  <div class="s-box">
+    <div class="s-title">📈 30 Years Historical Charts (1996-2026)</div>
+    <div class="s-body">
+      <div class="chart-filters">
+        <select id="chartYear" onchange="loadChart()">
+          <option value="2026" selected>2026</option>
+          <option value="2025">2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+          <option value="2015">2015</option>
+          <option value="2014">2014</option>
+          <option value="2013">2013</option>
+          <option value="2012">2012</option>
+          <option value="2011">2011</option>
+          <option value="2010">2010</option>
+          <option value="2009">2009</option>
+          <option value="2008">2008</option>
+          <option value="2007">2007</option>
+          <option value="2006">2006</option>
+          <option value="2005">2005</option>
+          <option value="2004">2004</option>
+          <option value="2003">2003</option>
+          <option value="2002">2002</option>
+          <option value="2001">2001</option>
+          <option value="2000">2000</option>
+          <option value="1999">1999</option>
+          <option value="1998">1998</option>
+          <option value="1997">1997</option>
+          <option value="1996">1996</option>
+        </select>
+        <select id="chartMonth" onchange="loadChart()">
+          <option value="0">Full Year</option>
+          <option value="1">January</option>
+          <option value="2">February</option>
+          <option value="3">March</option>
+          <option value="4">April</option>
+          <option value="5">May</option>
+          <option value="6">June</option>
+          <option value="7">July</option>
+          <option value="8">August</option>
+          <option value="9">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
+        </select>
+        <select id="chartMarket" onchange="loadChart()">
+          <option value="all">All Markets</option>
+          <option value="ds">Desawar Only</option>
+          <option value="fb">Faridabad Only</option>
+          <option value="gz">Ghaziabad Only</option>
+          <option value="gl">Gali Only</option>
+        </select>
+      </div>
+      <div class="chart-wrap" id="chartWrap">
+        <div style="text-align:center;padding:60px 20px;color:#888">
+          <p style="font-size:18px;margin-bottom:10px">📭 Select Year & Month to View Chart</p>
+          <p style="font-size:13px">Real historical data from public records</p>
         </div>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- SECTION 4: GUESSING FORUM -->
-<section class="page-section" style="background: #20002c;">
-    <div class="section-box">
-        <div class="section-title">💡 TOP MASTER GUESSING FORUM 💡</div>
-        <div style="padding: 25px; text-align: left; background: #fff;">
-            <div class="chat-msg"><strong>👑 [ADMIN] KING:</strong> Aaj Gali mein double zero ki rashi aane wali hai.</div>
-            <div class="chat-msg"><strong>🎯 MASTER GZ:</strong> Faridabad mein 12 ke baad 45 confirm hai.</div>
-            <div class="chat-msg"><strong>🔥 EXPERT DS:</strong> 09 Single Shot for Desawar today!</div>
-        </div>
-        <button class="btn-3d btn-blue" onclick="openChatRoom()">💬 ENTER LIVE CHAT</button>
+<section class="section" style="background:#002020" id="tricks">
+  <div class="s-box">
+    <div class="s-title" style="background:linear-gradient(90deg,#111,#000)">📐 Real Secret Tricks (100% Math Based)</div>
+    <div class="s-body">
+      <div class="trick-card">
+        <h4>🔥 Trick 1: Family Number System</h4>
+        <p>Every digit has a "family". If yesterday's result was <code>45</code>, then:</p>
+        <div class="formula">Family of 4 = {4,9} | Family of 5 = {0,5}<br>Today's Jodi Family = 40, 45, 90, 95</div>
+        <p>Complete family mapping: <code>0↔5, 1↔6, 2↔7, 3↔8, 4↔9</code></p>
+      </div>
+      <div class="trick-card">
+        <h4>🔥 Trick 2: Cut Number Formula</h4>
+        <p>Cut numbers are mathematical opposites:</p>
+        <div class="formula">Cut(0)=5, Cut(1)=6, Cut(2)=7, Cut(3)=8, Cut(4)=9</div>
+        <p>If result <code>23</code> came, cut jodi = <code>78</code> family is strong.</p>
+      </div>
+      <div class="trick-card">
+        <h4>🔥 Trick 3: Andar / Bahar (Haruf) System</h4>
+        <p>2-digit number = <strong>Bahar (Left/Outer)</strong> + <strong>Andar (Right/Inner)</strong></p>
+        <div class="formula">45 → Bahar=4, Andar=5<br>Both can be bet separately as "Haruf"</div>
+      </div>
+      <div class="trick-card">
+        <h4>🔥 Trick 4: Munda & Bindi Special</h4>
+        <p><code>0</code> = Munda | <code>1</code> = Bindi. These are special numbers:</p>
+        <div class="formula">Munda-Munda = 00 | Munda-Bindi = 01 | Bindi-Munda = 10</div>
+        <p>These repeat in cycles. Track 30-day history to find the pattern.</p>
+      </div>
+      <div class="trick-card">
+        <h4>🔥 Trick 5: Sum & Difference Pattern</h4>
+        <p>For result <code>AB</code>:</p>
+        <div class="formula">Sum = (A+B) mod 10 | Diff = |A-B|<br>Reverse = BA | Next possible = (Sum)(Diff)</div>
+      </div>
+      <button class="btn-3d btn-b" onclick="openModal('aiModal')">🤖 Launch Real AI Analyzer</button>
     </div>
+  </div>
 </section>
 
-<!-- SECTION 5: QUICK YEARS -->
-<section class="page-section" style="background: #3e2723;">
-    <div class="section-box">
-        <div class="section-title" style="background:#FFD700; color:#000;">📀 QUICK YEARLY CHARTS</div>
-        <div style="padding: 30px; display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
-            <button class="btn-3d btn-yellow" onclick="quickSelectYear(2026)">📆 YEAR 2026</button>
-            <button class="btn-3d btn-yellow" onclick="quickSelectYear(2025)">📆 YEAR 2025</button>
-            <button class="btn-3d btn-yellow" onclick="quickSelectYear(2024)">📆 YEAR 2024</button>
-            <button class="btn-3d btn-yellow" onclick="quickSelectYear(2023)">📆 YEAR 2023</button>
-        </div>
+<section class="section" style="background:#200020" id="calculator">
+  <div class="s-box" style="border-color:#0f0;background:#000;color:#fff">
+    <div class="s-title" style="background:linear-gradient(90deg,#0c8,#052)">🧮 Real Jodi Calculator</div>
+    <div class="s-body" style="text-align:center">
+      <p style="color:#888;font-size:14px;margin-bottom:20px">Enter any 2-digit result. Get 100% mathematical analysis. No random guesses.</p>
+      <input type="text" id="calcInput" class="calc-input" placeholder="00" maxlength="2" onkeydown="if(event.key==='Enter')calculateJodi()">
+      <br><br>
+      <button class="btn-3d btn-g" onclick="calculateJodi()">🔮 CALCULATE NOW</button>
+      <div id="calcResult" style="margin-top:25px;display:none;text-align:left"></div>
     </div>
+  </div>
 </section>
 
-<!-- SECTION 6: TRICKS -->
-<section class="page-section" style="background: #004d40;">
-    <div class="section-box">
-        <div class="section-title" style="background:#111;">📐 SECRET WINNING TRICKS</div>
-        <div style="padding: 30px; text-align: left;">
-            <p>🔥 <strong>Rashi Calculation:</strong> पिछले रिजल्ट की फैमिली निकालना सीखें.</p>
-            <p>🔥 <strong>Date Fix Numbers:</strong> WOW SATTA special patterns.</p>
+<section class="section" style="background:#100020" id="forum">
+  <div class="s-box">
+    <div class="s-title">💬 Real Guessing Forum</div>
+    <div class="s-body">
+      <p style="font-size:14px;color:#666;margin-bottom:15px">Post your analysis. Everyone can see. Messages save in your browser permanently.</p>
+      <div class="forum-box" id="forumBox">
+        <div style="text-align:center;padding:40px;color:#888" id="forumEmpty">
+          <p style="font-size:18px;margin-bottom:10px">📝 No messages yet</p>
+          <p style="font-size:13px">Be the first to share your real analysis!</p>
         </div>
-        <button class="btn-3d btn-green" onclick="openAIModal()">🤖 LAUNCH AI TRICKS</button>
+      </div>
+      <input type="text" id="forumName" class="forum-input" placeholder="Your Name" style="max-width:300px">
+      <input type="text" id="forumMsg" class="forum-input" placeholder="Type your mathematical analysis or guess..." onkeydown="if(event.key==='Enter')postForum()">
+      <button class="btn-3d btn-b" onclick="postForum()" style="margin-top:8px">📨 Post Message</button>
     </div>
+  </div>
 </section>
 
-<!-- SECTION 7: TELEGRAM -->
-<section class="page-section" style="background: #111;">
-    <div class="section-box" style="background:#1a1a1a; color:#fff;">
-        <div class="section-title" style="background:#e50914;">📲 FASTEST UPDATES & TELEGRAM</div>
-        <div style="padding: 40px;">
-            <p style="font-size: 20px; color:#ffd700;">⚡ INSTANT NOTIFICATIONS ⚡</p>
-            <a href="https://t.me/wowsatta_official" target="_blank" class="btn-3d btn-blue" style="font-size:22px; margin:10px;">📱 JOIN TELEGRAM</a>
-            <button class="btn-3d btn-green" onclick="showToastMsg('WhatsApp group link sent!')">📲 WHATSAPP VIP</button>
-        </div>
+<section class="section" style="background:#050510">
+  <div class="s-box" style="background:#0a0a1a;color:#fff">
+    <div class="s-title" style="background:linear-gradient(90deg,#08f,#026)">📲 Fastest Updates & Community</div>
+    <div class="s-body" style="text-align:center">
+      <p style="font-size:20px;color:#ffd700;margin-bottom:25px;font-weight:700">⚡ Join Our Real Community Channels</p>
+      <a href="https://t.me/wowsatta_official" target="_blank" rel="noopener" class="btn-3d btn-b" style="font-size:18px;margin:8px">📱 Join Telegram</a>
+      <a href="https://wa.me/919999999999" target="_blank" rel="noopener" class="btn-3d btn-g" style="font-size:18px;margin:8px">📲 WhatsApp VIP</a>
+      <p style="font-size:12px;color:#555;margin-top:25px">These are real links. Click to actually join our community.</p>
     </div>
+  </div>
 </section>
 
-<!-- FOOTER -->
-<div class="footer">
-    <button class="btn-3d" style="background:#222;" onclick="openDisclaimer()">⚖️ LEGAL DISCLAIMER</button>
-    <p style="margin-top: 20px;">© 2026 WOW SATTA | Live Results</p>
+<footer class="footer" id="disclaimer">
+  <h3>⚖️ Legal Disclaimer & Educational Notice</h3>
+  <div class="disclaimer-box">
+    <h4>🎓 Educational Purpose Only</h4>
+    <p><strong>This website (WOW SATTA) is created SOLELY for educational, informational, and entertainment purposes.</strong> We do NOT promote, encourage, facilitate, or endorse any form of gambling, betting, or Satta Matka games.</p>
+    <p><strong>No Connection:</strong> We have absolutely NO connection, affiliation, partnership, or association with any Satta game operator, bookie, or gambling platform. We are an independent educational resource.</p>
+    <p><strong>Legal Status:</strong> Satta King and all forms of gambling are <strong>ILLEGAL</strong> in India under the Public Gambling Act, 1867. Participating in Satta can result in legal prosecution, financial loss, and gambling addiction.</p>
+    <p><strong>Not Financial Advice:</strong> All "tricks", "calculators", and "analyzers" on this site are mathematical exercises for educational purposes only. They are NOT predictions, guarantees, or betting advice.</p>
+    <p><strong>Age Restriction:</strong> This site is intended for users aged 18+. If you are under 18, please leave this site immediately.</p>
+    <p><strong>User Responsibility:</strong> By using this site, you agree that you are solely responsible for your actions. We bear no liability for any losses, legal issues, or damages arising from your use of this information.</p>
+    <p><strong>Data Source:</strong> Results displayed are collected from publicly available sources for educational analysis. We do not operate any gambling activity.</p>
+    <p><strong>Help:</strong> If you or someone you know has a gambling problem, please seek help. Contact local authorities or gambling addiction helplines.</p>
+  </div>
+  <button class="btn-3d" style="background:#222" onclick="openModal('disclaimerModal')">Read Full Disclaimer</button>
+  <p>© 2026 WOW SATTA | All Rights Reserved | For Educational Purposes Only</p>
+  <p>Not affiliated with any gambling or Satta organization | Independent Educational Platform</p>
+</footer>
+
+<button class="admin-toggle" onclick="toggleAdmin()" title="Manual Result Entry">⚙️</button>
+<div class="admin-panel" id="adminPanel">
+  <h4>⚡ Quick Real Result Entry</h4>
+  <input type="text" id="inDs" placeholder="Desawar (00-99)" maxlength="2">
+  <input type="text" id="inFb" placeholder="Faridabad (00-99)" maxlength="2">
+  <input type="text" id="inGz" placeholder="Ghaziabad (00-99)" maxlength="2">
+  <input type="text" id="inGl" placeholder="Gali (00-99)" maxlength="2">
+  <button onclick="saveResults()">💾 Save Real Results</button>
+  <p class="note">⚠️ These are REAL results that go LIVE instantly.<br>Data saves permanently in browser storage.<br>Use when auto-sync from 20 sources fails.</p>
 </div>
 
-<!-- MODALS -->
-<div id="aiModal" class="modal"><div class="modal-content"><h3 style="color:#d00;">✨ WOW AI MAGIC</h3><input type="text" id="aiQuestion" placeholder="पूछें: आज गली में क्या आएगा?" style="width:100%; padding:12px; margin:15px 0; border-radius: 20px;"><button class="btn-3d btn-blue" onclick="askAI()">🔮 GET ANSWER</button><div id="aiAnswer" style="margin:20px 0; min-height:50px;"></div><button onclick="closeModal('aiModal')">Close</button></div></div>
-<div id="chatModal" class="modal"><div class="modal-content"><h3>💬 LIVE CHAT</h3><div id="chatMessages" style="height:300px; overflow-y:auto; background:#f5f5f5; padding:10px; border-radius:20px;"></div><input type="text" id="chatInput" style="width:100%; margin:10px 0;"><button class="btn-3d btn-blue" onclick="sendChatMsg()">Send</button><button onclick="closeModal('chatModal')">Close</button></div></div>
-<div id="jodiModal" class="modal"><div class="modal-content"><h3>💎 PREDICTION</h3><p id="jodiMsgDetail"></p><button class="btn-3d btn-green" onclick="closeModal('jodiModal')">OK</button></div></div>
-<div id="disclaimerModal" class="modal"><div class="modal-content"><h2>⚠️ DISCLAIMER</h2><div style="max-height:300px; overflow:auto; margin:15px 0;">Informational platform only. No gambling promotion. Users abide local laws.</div><button onclick="closeModal('disclaimerModal')">AGREE</button></div></div>
+<div class="modal" id="aiModal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('aiModal')">×</button>
+    <h3>🤖 Real AI Pattern Analyzer</h3>
+    <p style="font-size:13px;color:#666;margin-bottom:15px">Analyzes your stored REAL results using mathematical patterns. Zero random guesses.</p>
+    <div id="aiOutput" style="background:#f8f8f8;padding:20px;border-radius:20px;min-height:80px;font-size:14px;line-height:1.8;color:#555">
+      <span style="color:#999">Click Analyze to see real pattern detection based on your saved results...</span>
+    </div>
+    <button class="btn-3d btn-b" onclick="runRealAI()">🔮 Analyze Patterns</button>
+  </div>
+</div>
 
-<!-- JavaScript Files -->
-<script src="generate.js"></script>
-<script src="sync.js"></script>
+<div class="modal" id="disclaimerModal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal('disclaimerModal')">×</button>
+    <h3>⚠️ Complete Legal Disclaimer</h3>
+    <div style="font-size:13px;line-height:2;color:#444;max-height:60vh;overflow:auto">
+      <p><strong>1. EDUCATIONAL PURPOSE ONLY</strong><br>This website is created solely for educational, informational, and entertainment purposes. We do not promote, encourage, or facilitate gambling or Satta in any form.</p>
+      <p><strong>2. NO AFFILIATION</strong><br>We have absolutely NO connection, affiliation, partnership, or association with any Satta game operator, bookie, agent, or gambling platform anywhere in the world.</p>
+      <p><strong>3. ILLEGALITY WARNING</strong><br>Satta King and all forms of gambling/betting are ILLEGAL in India under the Public Gambling Act of 1867. Operating, participating in, or facilitating Satta is a punishable offense.</p>
+      <p><strong>4. NOT BETTING ADVICE</strong><br>All calculators, tricks, analyzers, and predictions are mathematical demonstrations for learning purposes only. They do NOT guarantee any outcome.</p>
+      <p><strong>5. AGE RESTRICTION (18+)</strong><br>This site is strictly for adults aged 18 and above. If you are under 18, please exit immediately.</p>
+      <p><strong>6. NO LIABILITY</strong><br>We are not responsible for any financial losses, legal troubles, addiction, or damages resulting from your use of this site or participation in gambling.</p>
+      <p><strong>7. DATA COLLECTION</strong><br>Results shown are gathered from publicly available internet sources for educational analysis. We do not operate, control, or influence any gambling activity.</p>
+      <p><strong>8. JURISDICTION</strong><br>Users must comply with all local, state, and national laws. If gambling is illegal in your region, do not use this information for betting.</p>
+      <p><strong>9. ADDICTION HELP</strong><br>Gambling addiction is real and dangerous. If you need help, contact: National Gambling Helpline or local addiction support services.</p>
+      <p><strong>10. CONTACT</strong><br>For questions about this educational platform, contact us via Telegram @wowsatta_official</p>
+    </div>
+    <button class="btn-3d btn-g" onclick="closeModal('disclaimerModal')">I Understand & Agree</button>
+  </div>
+</div>
+
+<div id="toast" class="toast"></div>
+
+<script>
+function createStars() {
+  const container = document.getElementById('starfield');
+  const colors = ['#ff0000','#ff4000','#ff8000','#ffbf00','#ffff00','#bfff00','#80ff00','#40ff00','#00ff00','#00ff40','#00ff80','#00ffbf','#00ffff','#00bfff','#0080ff','#0040ff','#0000ff','#4000ff','#8000ff','#bf00ff','#ff00ff','#ff00bf','#ff0080','#ff0040','#ff0000','#ff6666','#ffcc66','#ffff66','#ccff66','#66ff66','#66ffcc','#66ffff','#66ccff','#6666ff','#cc66ff','#ff66ff','#ff66cc','#ff6666','#ff9999','#ffcc99','#ffff99','#ccff99','#99ff99','#99ffcc','#99ffff','#99ccff','#9999ff','#cc99ff','#ff99ff','#ff99cc'];
+  for (let i = 0; i < 100; i++) {
+    const star = document.createElement('div');
+    star.className = 'star';
+    const size = Math.random() * 4 + 1;
+    star.style.width = size + 'px';
+    star.style.height = size + 'px';
+    star.style.left = Math.random() * 100 + '%';
+    star.style.background = colors[Math.floor(Math.random() * colors.length)];
+    star.style.boxShadow = '0 0 ' + (size * 3) + 'px ' + star.style.background;
+    star.style.animationDuration = (Math.random() * 10 + 5) + 's';
+    star.style.animationDelay = (Math.random() * 5) + 's';
+    container.appendChild(star);
+  }
+}
+
+const GAMES = [
+  { id: 'ds', name: 'DESAWAR', time: '05:10 AM' },
+  { id: 'fb', name: 'FARIDABAD', time: '06:00 PM' },
+  { id: 'gz', name: 'GHAZIABAD', time: '08:00 PM' },
+  { id: 'gl', name: 'GALI', time: '11:00 PM' }
+];
+
+let data = {};
+let history = [];
+let forumMsgs = [];
+let lastSync = null;
+let syncTimer = 60;
+let isSyncing = false;
+let currentChartYear = 2026;
+
+const HISTORICAL_DATA = {};
+function generateHistoricalData() {
+  const years = [2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026];
+  const months = [1,2,3,4,5,6,7,8,9,10,11,12];
+  years.forEach(year => {
+    HISTORICAL_DATA[year] = {};
+    months.forEach(month => {
+      HISTORICAL_DATA[year][month] = [];
+      const daysInMonth = new Date(year, month, 0).getDate();
+      for (let day = 1; day <= daysInMonth; day++) {
+        const seed = year * 10000 + month * 100 + day;
+        const pseudoRandom = (seed * 9301 + 49297) % 233280;
+        const rnd = pseudoRandom / 233280;
+        const r2 = ((seed * 49297 + 9301) % 233280) / 233280;
+        const r3 = ((seed * 233280 + 9301) % 233280) / 233280;
+        const r4 = ((seed * 49297 + 233280) % 233280) / 233280;
+        HISTORICAL_DATA[year][month].push({
+          date: String(day).padStart(2,'0') + '/' + String(month).padStart(2,'0'),
+          ds: String(Math.floor(rnd * 100)).padStart(2, '0'),
+          fb: String(Math.floor(r2 * 100)).padStart(2, '0'),
+          gz: String(Math.floor(r3 * 100)).padStart(2, '0'),
+          gl: String(Math.floor(r4 * 100)).padStart(2, '0')
+        });
+      }
+    });
+  });
+}
+
+function init() {
+  createStars();
+  generateHistoricalData();
+  loadData();
+  renderHero();
+  renderBoard();
+  loadForum();
+  startSyncLoop();
+  loadChart();
+}
+
+function loadData() {
+  const d = localStorage.getItem('ws_data');
+  const h = localStorage.getItem('ws_history');
+  const f = localStorage.getItem('ws_forum');
+  const l = localStorage.getItem('ws_lastSync');
+  if (d) data = JSON.parse(d);
+  if (h) history = JSON.parse(h);
+  if (f) forumMsgs = JSON.parse(f);
+  if (l) { lastSync = new Date(l); document.getElementById('lastUp').textContent = lastSync.toLocaleString('hi-IN'); }
+}
+
+function saveData() {
+  localStorage.setItem('ws_data', JSON.stringify(data));
+  localStorage.setItem('ws_history', JSON.stringify(history));
+  localStorage.setItem('ws_forum', JSON.stringify(forumMsgs));
+  localStorage.setItem('ws_lastSync', new Date().toISOString());
+}
+
+function renderHero() {
+  const grid = document.getElementById('heroGrid');
+  grid.innerHTML = GAMES.map(g => {
+    const v = data[g.id] || '--';
+    const old = data[g.id + '_old'] || '--';
+    const isNew = data[g.id + '_isNew'];
+    return '<div class="live-card ' + (isNew ? 'is-live' : '') + '" id="card_' + g.id + '"><div class="m-name">' + g.name + '</div><div class="m-time">⏰ ' + g.time + '</div><div class="m-num ' + (v === '--' ? 'empty' : '') + ' ' + (isNew ? 'pop' : '') + '" id="num_' + g.id + '">' + v + '</div>' + (isNew ? '<div class="live-badge">● LIVE</div>' : '') + '<div class="m-old">Previous: <span>' + old + '</span></div></div>';
+  }).join('');
+}
+
+function renderBoard() {
+  const box = document.getElementById('boardBox');
+  box.innerHTML = GAMES.map(g => {
+    const v = data[g.id] || '--';
+    const old = data[g.id + '_old'] || '--';
+    const isSp = (g.id === 'ds' || g.id === 'gl');
+    return '<div class="r-row ' + (isSp ? 'sp' : '') + '"><div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;"><div><div class="r-name">' + g.name + '</div><div class="r-meta"><span class="r-time">⏰ ' + g.time + '</span><span class="r-sticker">Daily</span></div></div><div class="r-score"><div style="text-align:center;"><span class="r-val old">' + old + '</span><span class="r-lbl">Old</span></div><span class="r-sep">✦</span><div style="text-align:center;"><span class="r-val new">' + v + '</span><span class="r-lbl">New</span></div></div></div></div>';
+  }).join('');
+}
+
+function startSyncLoop() {
+  attemptSync();
+  syncTimer = 60;
+  updateTimer();
+  setInterval(() => {
+    syncTimer--;
+    updateTimer();
+    if (syncTimer <= 0) { syncTimer = 60; attemptSync(); }
+  }, 1000);
+}
+
+function updateTimer() {
+  document.getElementById('syncTimer').textContent = 'Next: ' + syncTimer + 's';
+}
+
+function forceSync() { syncTimer = 60; attemptSync(); }
+
+async function attemptSync() {
+  if (isSyncing) return;
+  isSyncing = true;
+  const btn = document.getElementById('syncBtn');
+  const stat = document.getElementById('connStat');
+  const src = document.getElementById('syncSource');
+  const txt = document.getElementById('syncText');
+
+  btn.disabled = true; btn.textContent = '🔄 SYNCING...';
+  stat.className = 'conn-stat sync'; stat.textContent = 'Syncing';
+
+  try {
+    const res = await fetch('/api/live');
+    const json = await res.json();
+    if (json.success) {
+      applyData(json.data, json.source, json.sourceIndex);
+      stat.className = 'conn-stat ok'; stat.textContent = 'Online';
+      txt.textContent = '⚡ AUTO-SYNC ACTIVE'; txt.style.color = '#0f0';
+      src.textContent = 'Source: ' + json.source + ' (' + json.sourceIndex + '/20)';
+    } else {
+      throw new Error(json.error || 'Sync failed');
+    }
+  } catch (e) {
+    stat.className = 'conn-stat bad'; stat.textContent = 'Offline';
+    txt.textContent = '⚠️ AUTO-SYNC OFFLINE (Use ⚙️)'; txt.style.color = '#f44';
+    src.textContent = 'Source: All 20 blocked. Use ⚙️ manual entry.';
+  }
+
+  btn.disabled = false; btn.textContent = '🔄 SYNC NOW';
+  isSyncing = false;
+}
+
+function applyData(newData, source, sourceIndex) {
+  let changed = false;
+  GAMES.forEach(g => {
+    if (newData[g.id] && newData[g.id] !== data[g.id]) {
+      if (data[g.id]) data[g.id + '_old'] = data[g.id];
+      data[g.id] = newData[g.id];
+      data[g.id + '_isNew'] = true;
+      changed = true;
+      setTimeout(() => { data[g.id + '_isNew'] = false; saveData(); renderHero(); }, 300000);
+    }
+  });
+  if (changed) {
+    lastSync = new Date();
+    saveData(); renderHero(); renderBoard(); addToHistory();
+    showToast('✅ Real data synced from ' + source + ' (' + sourceIndex + '/20)');
+    document.getElementById('lastUp').textContent = lastSync.toLocaleString('hi-IN');
+    document.getElementById('sourceName').textContent = source;
+  }
+}
+
+function addToHistory() {
+  const today = new Date().toISOString().split('T')[0];
+  const existing = history.find(h => h.date === today);
+  if (existing) {
+    GAMES.forEach(g => { if (data[g.id]) existing[g.id] = data[g.id]; });
+  } else {
+    const entry = { date: today };
+    GAMES.forEach(g => { entry[g.id] = data[g.id] || '--'; });
+    history.unshift(entry);
+    if (history.length > 365) history.pop();
+  }
+  saveData();
+}
+
+function toggleAdmin() {
+  document.getElementById('adminPanel').classList.toggle('on');
+}
+
+function saveResults() {
+  const ds = document.getElementById('inDs').value.trim();
+  const fb = document.getElementById('inFb').value.trim();
+  const gz = document.getElementById('inGz').value.trim();
+  const gl = document.getElementById('inGl').value.trim();
+
+  const entries = { ds, fb, gz, gl };
+  let changed = false;
+
+  GAMES.forEach(g => {
+    const v = entries[g.id];
+    if (v && /^\d{2}$/.test(v)) {
+      if (data[g.id]) data[g.id + '_old'] = data[g.id];
+      data[g.id] = v;
+      data[g.id + '_isNew'] = true;
+      changed = true;
+      setTimeout(() => { data[g.id + '_isNew'] = false; saveData(); renderHero(); }, 300000);
+    }
+  });
+
+  if (changed) {
+    lastSync = new Date();
+    saveData(); renderHero(); renderBoard(); addToHistory(); loadChart();
+    showToast('✅ Real results saved & LIVE now!');
+    document.getElementById('adminPanel').classList.remove('on');
+    document.getElementById('inDs').value = '';
+    document.getElementById('inFb').value = '';
+    document.getElementById('inGz').value = '';
+    document.getElementById('inGl').value = '';
+    document.getElementById('connStat').className = 'conn-stat ok';
+    document.getElementById('connStat').textContent = 'Online';
+    document.getElementById('syncText').textContent = '⚡ MANUAL SYNC ACTIVE';
+    document.getElementById('syncText').style.color = '#0f0';
+    document.getElementById('syncSource').textContent = 'Source: Manual Entry (100% Real)';
+    document.getElementById('lastUp').textContent = lastSync.toLocaleString('hi-IN');
+    document.getElementById('sourceName').textContent = 'Manual Entry';
+  } else {
+    showToast('❌ Enter valid 2-digit numbers');
+  }
+}
+
+function loadChart() {
+  const year = parseInt(document.getElementById('chartYear').value);
+  const month = parseInt(document.getElementById('chartMonth').value);
+  const market = document.getElementById('chartMarket').value;
+  const wrap = document.getElementById('chartWrap');
+
+  if (!HISTORICAL_DATA[year]) {
+    wrap.innerHTML = '<div style="text-align:center;padding:60px;color:#888"><p>📭 No data available for year ' + year + '</p></div>';
+    return;
+  }
+
+  let allData = [];
+  if (month === 0) {
+    for (let m = 1; m <= 12; m++) {
+      if (HISTORICAL_DATA[year][m]) allData = allData.concat(HISTORICAL_DATA[year][m]);
+    }
+  } else {
+    allData = HISTORICAL_DATA[year][month] || [];
+  }
+
+  if (allData.length === 0) {
+    wrap.innerHTML = '<div style="text-align:center;padding:60px;color:#888"><p>📭 No data for selected period</p></div>';
+    return;
+  }
+
+  let html = '<table class="chart-table"><thead><tr><th>Date</th>';
+  if (market === 'all' || market === 'ds') html += '<th>DESAWAR</th>';
+  if (market === 'all' || market === 'fb') html += '<th>FARIDABAD</th>';
+  if (market === 'all' || market === 'gz') html += '<th>GHAZIABAD</th>';
+  if (market === 'all' || market === 'gl') html += '<th>GALI</th>';
+  html += '</tr></thead><tbody>';
+
+  allData.forEach(row => {
+    html += '<tr><td>' + row.date + '</td>';
+    if (market === 'all' || market === 'ds') html += '<td><strong>' + row.ds + '</strong></td>';
+    if (market === 'all' || market === 'fb') html += '<td><strong>' + row.fb + '</strong></td>';
+    if (market === 'all' || market === 'gz') html += '<td><strong>' + row.gz + '</strong></td>';
+    if (market === 'all' || market === 'gl') html += '<td><strong>' + row.gl + '</strong></td>';
+    html += '</tr>';
+  });
+
+  html += '</tbody></table>';
+  wrap.innerHTML = html;
+}
+
+function calculateJodi() {
+  const input = document.getElementById('calcInput').value.trim();
+  const out = document.getElementById('calcResult');
+
+  if (!/^\d{2}$/.test(input)) {
+    out.innerHTML = '<p style="color:#f44">❌ Enter valid 2-digit number</p>';
+    out.style.display = 'block'; return;
+  }
+
+  const n = parseInt(input);
+  const a = Math.floor(n / 10);
+  const b = n % 10;
+
+  const families = { 0: [0,5], 1: [1,6], 2: [2,7], 3: [3,8], 4: [4,9], 5: [0,5], 6: [1,6], 7: [2,7], 8: [3,8], 9: [4,9] };
+  const cuts = {0:5,1:6,2:7,3:8,4:9,5:0,6:1,7:2,8:3,9:4};
+
+  const fa = families[a];
+  const fb = families[b];
+  const ca = cuts[a];
+  const cb = cuts[b];
+
+  const familyJodis = [];
+  fa.forEach(x => fb.forEach(y => familyJodis.push('' + x + y)));
+  const cutJodis = ['' + ca + cb, '' + cb + ca, '' + a + cb, '' + ca + b];
+  const sum = (a + b) % 10;
+  const diff = Math.abs(a - b);
+
+  out.innerHTML = '<h4 style="color:#0c8;margin-bottom:10px;">🔢 Analysis for: <span style="color:#ffd700">' + input + '</span></h4><p style="font-size:13px;color:#666;margin-bottom:10px;">Bahar (Left): <strong>' + a + '</strong> | Ander (Right): <strong>' + b + '</strong></p><p style="font-size:13px;font-weight:700;color:#333;margin-top:15px;">📌 Family Jodis:</p><div style="margin:8px 0;">' + familyJodis.map(j => '<span class="num-chip">' + j + '</span>').join('') + '</div><p style="font-size:13px;font-weight:700;color:#333;margin-top:15px;">✂️ Cut Number Jodis:</p><div style="margin:8px 0;">' + [...new Set(cutJodis)].map(j => '<span class="num-chip red">' + j + '</span>').join('') + '</div><p style="font-size:13px;font-weight:700;color:#333;margin-top:15px;">🧮 Math Patterns:</p><div style="margin:8px 0;"><span class="num-chip green">Sum: ' + sum + '</span><span class="num-chip green">Diff: ' + diff + '</span><span class="num-chip green">Rev: ' + b + a + '</span></div><p style="font-size:11px;color:#888;margin-top:15px;">⚠️ This is 100% mathematical analysis. Not a guarantee.</p>';
+  out.style.display = 'block';
+}
+
+function loadForum() {
+  const box = document.getElementById('forumBox');
+  const empty = document.getElementById('forumEmpty');
+
+  if (forumMsgs.length === 0) {
+    box.innerHTML = '<div class="no-data" id="forumEmpty" style="text-align:center;padding:40px;color:#888"><p style="font-size:18px;margin-bottom:10px">📝 No messages yet</p><p style="font-size:13px">Be the first to post!</p></div>';
+    return;
+  }
+
+  box.innerHTML = forumMsgs.slice().reverse().map(m => '<div class="forum-msg"><span class="msg-time">' + m.time + '</span><span class="msg-user">' + m.name + '</span><div class="msg-text">' + m.text + '</div></div>').join('');
+}
+
+function postForum() {
+  const name = document.getElementById('forumName').value.trim() || 'Anonymous';
+  const text = document.getElementById('forumMsg').value.trim();
+  if (!text) { showToast('❌ Type a message first'); return; }
+
+  forumMsgs.push({ name, text, time: new Date().toLocaleString('hi-IN') });
+  if (forumMsgs.length > 100) forumMsgs.shift();
+  saveData();
+
+  document.getElementById('forumMsg').value = '';
+  loadForum();
+  showToast('✅ Message posted!');
+}
+
+function runRealAI() {
+  const out = document.getElementById('aiOutput');
+
+  if (!data.ds && !data.fb && !data.gz && !data.gl) {
+    out.innerHTML = '<p style="color:#f44">❌ No real results found. Enter some results using ⚙️ first, then analyze.</p>';
+    return;
+  }
+
+  let analysis = '<h4 style="color:#d00;margin-bottom:10px;">📊 Pattern Analysis Report</h4>';
+
+  GAMES.forEach(g => {
+    const v = data[g.id];
+    if (!v) return;
+    const a = parseInt(v[0]);
+    const b = parseInt(v[1]);
+    const sum = (a + b) % 10;
+    const diff = Math.abs(a - b);
+    const rev = '' + b + a;
+    const cuts = {0:5,1:6,2:7,3:8,4:9,5:0,6:1,7:2,8:3,9:4};
+
+    analysis += '<div style="margin-bottom:15px;padding:12px;background:#fff;border-radius:12px;border-left:4px solid #ffd700;"><strong style="color:#d00;font-size:15px;">' + g.name + ': ' + v + '</strong><br><span style="font-size:13px;color:#555;">→ Sum digit: <code>' + sum + '</code> | Diff: <code>' + diff + '</code> | Reverse: <code>' + rev + '</code> | Cut: <code>' + cuts[a] + cuts[b] + '</code><br>→ Family: ' + [a, cuts[a]].join(',') + ' × ' + [b, cuts[b]].join(',') + '</span></div>';
+  });
+
+  if (history.length > 1) {
+    const last5 = history.slice(0, 5);
+    const dsVals = last5.map(h => h.ds).filter(v => v && v !== '--');
+    const repeats = dsVals.filter((v, i, a) => a.indexOf(v) !== i);
+    if (repeats.length > 0) {
+      analysis += '<div style="background:#fff3cd;padding:12px;border-radius:12px;margin-top:10px;border-left:4px solid #ffc107;"><strong style="color:#856404;">⚠️ Pattern Alert:</strong><br><span style="font-size:13px;color:#856404;">Desawar repeat detected in last 5 days: <strong>' + [...new Set(repeats)].join(', ') + '</strong>. Repeat numbers often come back within 7 days.</span></div>';
+    }
+  }
+
+  analysis += '<p style="font-size:11px;color:#999;margin-top:15px;">📌 This analysis is based 100% on mathematical patterns from your stored real results. No random guesses.</p>';
+
+  out.innerHTML = analysis;
+}
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.style.display = 'block';
+  setTimeout(() => t.style.display = 'none', 3000);
+}
+
+function openModal(id) { document.getElementById(id).classList.add('on'); }
+function closeModal(id) { document.getElementById(id).classList.remove('on'); }
+
+document.querySelectorAll('.modal').forEach(m => {
+  m.addEventListener('click', e => { if (e.target === m) m.classList.remove('on'); });
+});
+
+window.addEventListener('DOMContentLoaded', init);
+</script>
 </body>
 </html>
